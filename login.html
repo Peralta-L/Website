@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1> Log-In: </h1>
+{% if wrong == False %}
+    <h3>Please enter Correct Password or User-Name</h3>
+{% endif %}
+<form action="{{ url_for('login')}}" method="POST">
+    <div>
+        <img src= ../image/arrow.jpg alt="Arrow" width="980" height="980"/>
+        <label for="User_Name">User-name:</label>
+        <input type="text" id="User_Name" name="name">
+    </div>
+    <br>
+    <div>
+        <img src= ../image/arrow.jpg alt="Arrow" width="980" height="980"/>
+        <label for="password">password</label>
+        <input type="text" id="password" name="passcode">
+    </div>
+    <br>
+    <input type="submit" value="submit">
+</form>
+<p></p>
+<h3><a href='http://127.0.0.1:5000'>GO BACK!</a></h3>
+</body>
+</html>

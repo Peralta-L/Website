@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<h1> Register: </h1>
+<form action="{{ url_for('register')}}" method="POST">
+    <div>
+        {% if notification == False %}
+            <div>
+                <label>Your username has already been taken:</label>
+            </div>
+            <img src= ../image/arrow.jpg alt="Arrow" width="980" height="980"/>
+            <label for="User_Name">Insert User-name:</label>
+        {% else %}
+            <img src= ../image/arrow.jpg alt="Arrow" width="980" height="980"/>
+            <label for="User_Name">Insert User-name:</label>
+        {% endif %}
+        <input type="text" id="User_Name" name="name" maxlength="12" minlength="5" required>
+    </div>
+    <br>
+    <div>
+        {% if rules == True %}
+            <img src= ../image/arrow.jpg alt="Arrow" width="980" height="980"/>
+            <label for="password">Insert pass-word</label>
+        {% elif rules == False %}
+            <div>
+            <label>Insert correct Format for the password</label>
+            </div>
+            <img src= ../image/arrow.jpg alt="Arrow" width="980" height="980"/>
+            <label for="password">Insert pass-word</label>
+        {% endif %}
+        <input type="text" id="password" name="passcode" minlength="12" required>
+    </div>
+    <br>
+    <input type="submit" value="submit">
+</form>
+<p></p>
+<h3><a href='http://127.0.0.1:5000'>GO BACK!</a></h3>
+</body>
+</html>

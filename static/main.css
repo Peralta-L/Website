@@ -1,0 +1,6 @@
+body {
+  background-color: black
+}
+h1, li, h2, a,h3, p, label {
+  color: white;
+}
