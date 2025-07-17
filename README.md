@@ -66,4 +66,4 @@ lab7_peralta_luis/
 
 ## License
 
-This project is
+This project is for educational purposes.
