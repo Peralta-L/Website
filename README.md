@@ -57,13 +57,6 @@ lab7_peralta_luis/
    ```
    http://127.0.0.1:5000
    ```
-
-## Notes
-
-- **Do not upload your `.venv` folder or any sensitive files.**
-- The `info.txt` file stores user credentials in a hashed format. Do not share this file publicly if it contains real user data.
-- Make sure to include your `static/` and `templates/` folders for the app to work correctly.
-
 ## Dependencies
 
 - Flask
